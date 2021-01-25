@@ -1,0 +1,260 @@
+{
+  "Description": "版本名称",
+  "AllChannelsData": {
+    "default": {
+      "PolicyId_ChannelVersion": 0,
+      "PolicyId_Serverlist": 0,
+      "PolicyId_Bulletin": 0
+    },
+	"Android": {
+      "PolicyId_ChannelVersion": 1,
+      "PolicyId_Serverlist": 1,
+      "PolicyId_Bulletin": 1
+    },
+	"iOS": {
+      "PolicyId_ChannelVersion": 2,
+      "PolicyId_Serverlist": 2,
+      "PolicyId_Bulletin": 2
+    },
+    "PC": {
+      "PolicyId_ChannelVersion": 3,
+      "PolicyId_Serverlist": 3,
+      "PolicyId_Bulletin": 3
+    }
+  },
+  "ChannelsPolicyData": {
+	"0": {
+      "ResVer": "9",
+      "ResourcesUrl": "http://192.168.1.126/Ver_2/",
+	  "LoginUrl": "http://192.168.1.27:7090/",
+      "ShareFunction": true,
+      "OpenExchange": true,
+      "ClientVersion": "0.1.0",
+      "ClientUrl": "redmoongame.com",
+	  "FullResUrl": "http://192.168.1.126/Ver_1/"
+    },
+	"1": {
+      "ResVer": "9",
+      "ResourcesUrl": "http://192.168.1.126/Ver_1/",
+	  "LoginUrl": "http://192.168.1.27:7090/",
+      "ShareFunction": true,
+      "OpenExchange": true,
+      "ClientVersion": "0.1.0",
+      "ClientUrl": "redmoongame.com",
+	  "FullResUrl": "http://192.168.1.126/Ver_1/"
+    }
+  },
+  "ServerlistPolicyData": {
+    "0": {
+      "DefaultMessageStop": "测试一下维护信息",
+      "DefaultMessageFull": "满员信息测试",
+      "ServerInfos": [
+        {
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2001",
+          "RealmId": 2001,
+          "ID": "2001",
+          "Name": "杨欢登录服务器",
+          "IpAddress": "198.162.1.88",
+          "Port": 7090,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2701",
+          "RealmId": 2701,
+          "ID": "2701",
+          "Name": "27的本地服务器",
+          "IpAddress": "198.162.1.27",
+          "Port": 14000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2702",
+          "RealmId": 2702,
+          "ID": "2702",
+          "Name": "27的登录服务器",
+          "IpAddress": "198.162.1.27",
+          "Port": 16000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2001",
+          "RealmId": 2001,
+          "ID": "2001",
+          "Name": "李金荣的登录服务器",
+          "IpAddress": "198.162.1.89",
+          "Port": 7090,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2002",
+          "RealmId": 2002,
+          "ID": "2002",
+          "Name": "李金荣的本地服务器",
+          "IpAddress": "192.168.1.89",
+          "Port": 12000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+        {
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "1",
+          "RealmId": 1901,
+          "ID": "1901",
+          "Name": "杨欢本地服务器",
+          "IpAddress": "192.168.1.88",
+          "Port": 12000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        }
+      ]
+    },
+	"1": {
+      "DefaultMessageStop": "测试一下维护信息",
+      "DefaultMessageFull": "满员信息测试",
+      "ServerInfos": [
+        {
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2001",
+          "RealmId": 2001,
+          "ID": "2001",
+          "Name": "杨欢登录服务器",
+          "IpAddress": "198.162.1.88",
+          "Port": 7090,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2701",
+          "RealmId": 2701,
+          "ID": "2701",
+          "Name": "27的本地服务器",
+          "IpAddress": "198.162.1.27",
+          "Port": 14000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2702",
+          "RealmId": 2702,
+          "ID": "2702",
+          "Name": "27的登录服务器",
+          "IpAddress": "198.162.1.27",
+          "Port": 16000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2001",
+          "RealmId": 2001,
+          "ID": "2001",
+          "Name": "李金荣的登录服务器",
+          "IpAddress": "198.162.1.89",
+          "Port": 7090,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+		{
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "2002",
+          "RealmId": 2002,
+          "ID": "2002",
+          "Name": "李金荣的本地服务器",
+          "IpAddress": "192.168.1.89",
+          "Port": 12000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        },
+        {
+          "OldState": 0,
+          "Icon": null,
+          "State": 0,
+          "DisplayID": "1",
+          "RealmId": 1901,
+          "ID": "1901",
+          "Name": "杨欢本地服务器",
+          "IpAddress": "192.168.1.88",
+          "Port": 12000,
+          "MessageStop": null,
+          "MessageFull": null,
+          "CanEnter": true
+        }
+      ]
+    }
+  },
+  "BulletinPolicyData": {
+    "0": {
+      "BulletInfos": [
+        {
+          "Id": 3,
+          "Logo": 1,
+          "Title": "公告測試",
+          "Content": "<texture resType=url name=http://192.168.1.126/download/updateres/gonggao_banner1.png width=564 height=156>   <font name=Redmoon color=393533 size=18 text=公告测试。> ",
+          "ShortTitle": "公告測試"
+        }
+      ]
+    },
+    "1": {
+      "BulletInfos": [
+        {
+          "Id": 2,
+          "Logo": 1,
+          "Title": "Title1",
+          "Content": "Content1",
+          "ShortTitle": "ShortTitle1"
+        },
+        {
+          "Id": 1,
+          "Logo": 2,
+          "Title": "Title2",
+          "Content": "Content2",
+          "ShortTitle": "ShortTitle2"
+        }
+      ]
+    }
+  }
+}

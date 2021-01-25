@@ -1,0 +1,104 @@
+2020-11-09 17:19:41,273 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :114.255.24.2--[_load_white_ip_list_:94]
+2020-11-09 17:19:41,305 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.81--[_load_white_ip_list_:94]
+2020-11-09 17:19:41,306 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :117.184.30.22--[_load_white_ip_list_:94]
+2020-11-09 17:19:41,307 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.1--[_load_white_ip_list_:94]
+2020-11-09 17:19:42,284 [1 ]ERROR - [Logger]Load Data file failed, path = data.1.0.0.bytes
+Exception:Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'ChannelsPolicyData.0.ClientUrl', line 23, position 3.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateDictionary(IDictionary dictionary, JsonReader reader, JsonDictionaryContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ResourcesServer.Data.DataProcessor.LoadDataByVersion(String version) in E:\ProjectElfin\Code\Client\ResourcesServerRM\ResourcesServer\Data\DataProcessor.cs:line 92--[LoadDataByVersion:134]
+2020-11-09 17:20:17,154 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :114.255.24.2--[_load_white_ip_list_:94]
+2020-11-09 17:20:17,165 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.81--[_load_white_ip_list_:94]
+2020-11-09 17:20:17,165 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :117.184.30.22--[_load_white_ip_list_:94]
+2020-11-09 17:20:17,166 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.1--[_load_white_ip_list_:94]
+2020-11-09 17:20:55,699 [1 ]ERROR - [Logger]Load resource version at path : http://192.168.1.116/Ver_2/ failed. 
+System.Net.WebException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ ---> System.Net.Http.HttpRequestException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   at System.Net.Http.ConnectHelper.ConnectEventArgs.OnCompleted(SocketAsyncEventArgs _)
+   at System.Net.Sockets.MultipleConnectAsync.AsyncFail(Exception e)
+   at System.Net.Sockets.MultipleConnectAsync.InternalConnectCallback(Object sender, SocketAsyncEventArgs args)
+   at System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   at System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Net.Sockets.SocketAsyncEventArgs.FinishOperationAsyncFailure(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   at System.Net.Sockets.SocketAsyncEventArgs.HandleCompletionPortCallbackError(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   at System.Net.Sockets.SocketAsyncEventArgs.<>c.<.cctor>b__176_0(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   at System.Threading.ThreadPoolBoundHandleOverlapped.CompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   at System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pNativeOverlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts, CancellationToken callerToken, Int64 timeoutTime)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at ResourcesServer.Data.DataUtility.HttpDownloadFile(String url) in E:\ProjectElfin\Code\Client\ResourcesServerRM\ResourcesServer\Data\DataUtility.cs:line 46
+   at ResourcesServer.Data.DataProcessor.LoadDataByVersion(String version) in E:\ProjectElfin\Code\Client\ResourcesServerRM\ResourcesServer\Data\DataProcessor.cs:line 99--[LoadDataByVersion:116]
+2020-11-09 17:22:46,903 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :114.255.24.2--[_load_white_ip_list_:94]
+2020-11-09 17:22:46,915 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.81--[_load_white_ip_list_:94]
+2020-11-09 17:22:46,915 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :117.184.30.22--[_load_white_ip_list_:94]
+2020-11-09 17:22:46,916 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.1--[_load_white_ip_list_:94]
+2020-11-09 17:22:47,169 [1 ]INFO  - [Logger]Load resource version at path : http://192.168.1.126/Ver_2/, res version : 67--[LoadDataByVersion:107]
+2020-11-09 17:22:47,170 [1 ]INFO  - [Logger]Reload data success at path = data.1.0.0.bytes--[LoadDataByVersion:122]
+2020-11-09 17:24:52,493 [9 ]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 17:24:54,191 [16]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 17:43:50,659 [54]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 17:43:52,096 [55]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 17:46:40,223 [64]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 17:46:41,708 [73]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:13:09,417 [78]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:13:19,377 [75]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:13:56,975 [75]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:13:58,726 [4 ]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:14:23,732 [75]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:14:25,347 [7 ]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:41:22,153 [36]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:41:23,761 [33]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:58:50,655 [81]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 19:58:52,190 [80]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:01:55,413 [93]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:01:57,068 [96]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:05:45,039 [85]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:05:47,619 [79]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:11:59,144 [21]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:12:00,784 [24]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:12:17,253 [25]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:12:19,551 [25]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:19:05,567 [36]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:19:06,954 [36]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:19:57,074 [42]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:19:58,503 [51]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:25:10,822 [74]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:25:12,447 [74]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:56:21,803 [40]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:56:23,268 [40]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:59:28,955 [24]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 20:59:30,360 [19]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 21:01:46,455 [16]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 21:01:48,025 [14]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 21:06:19,097 [83]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]
+2020-11-09 21:06:20,583 [93]ERROR - [Logger]SvrlistRequestAction  HTTP_X_FORWARDED_FOR is  null--[SvrlistRequestAction:134]

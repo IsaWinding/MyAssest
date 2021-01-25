@@ -1,0 +1,2 @@
+2020-12-08 15:13:23,577 [31]ERROR - [Logger]command[/favicon.ico] is not found at /favicon.ico--[OnException:119]
+System.InvalidOperationException: command[/favicon.ico] is not found at /favicon.ico

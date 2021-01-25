@@ -1,0 +1,10 @@
+2020-12-14 11:02:47,778 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :114.255.24.2--[_load_white_ip_list_:94]
+2020-12-14 11:02:47,788 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.81--[_load_white_ip_list_:94]
+2020-12-14 11:02:47,788 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :117.184.30.22--[_load_white_ip_list_:94]
+2020-12-14 11:02:47,789 [1 ]ERROR - [Logger]_load_white_ip_list_  whiteip.bytes content is :192.168.1.1--[_load_white_ip_list_:94]
+2020-12-14 11:02:48,092 [1 ]INFO  - [Logger]Load resource version at path : http://192.168.1.126/Ver_2/, res version : 374--[LoadDataByVersion:107]
+2020-12-14 11:02:48,096 [1 ]INFO  - [Logger]Reload data success at path = data.1.0.0.bytes--[LoadDataByVersion:122]
+2020-12-14 15:43:09,587 [65]ERROR - [Logger]command[/download/updateres/huodong.png] is not found at /download/updateres/huodong.png--[OnException:119]
+System.InvalidOperationException: command[/download/updateres/huodong.png] is not found at /download/updateres/huodong.png
+2020-12-14 15:43:09,982 [63]ERROR - [Logger]command[/favicon.ico] is not found at /favicon.ico--[OnException:119]
+System.InvalidOperationException: command[/favicon.ico] is not found at /favicon.ico
